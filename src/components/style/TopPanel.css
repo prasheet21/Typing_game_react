@@ -1,0 +1,18 @@
+.main-container { 
+    color : white ;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:50px ;
+}
+.main-container > div {
+    display:flex ;
+    flex-direction: column;
+    background-color: rgba(0 , 0 , 0 , 0.6);
+    color : white ; 
+    width: 100% ;
+    padding : 10px 0 ;
+}
+
+.full-name{
+    font-size : 12px ;
+}
