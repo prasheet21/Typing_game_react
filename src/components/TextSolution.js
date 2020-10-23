@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './style/TextSolution.css';
 
 const TextSolution = ({ transfer, setCharacterCount, startTimer , handleOnGameStart }) => {

@@ -1,24 +1,22 @@
-import React, {useState} from 'react' ;
+import React, {useEffect, useState} from 'react' ;
 import './style/TextFollowed.css' ;
 
 
-const TextFollowed = ({text , solText , setMistakesCount}) => {
+const TextFollowed = ({text, solText }) => {
    
     console.log("Starting new TextFollowed") ;
-    let color = '' ;
     return (
         <div className='TextFollowed'>
             {
                 text.split('').map((data , index) => {
+                    let color = '' ;
                     if(solText[index] === undefined)
                         color = 'yellow' ;
                     else if (data === solText[index])
                         color = 'green' ;
-                    else{
+                    else {
                         color = 'red' ;
-                        setMistakesCount() ;
-                    }
-                    
+                    }                    
                     return <span style={{color : color}}>{data}</span>     
                 })
          
