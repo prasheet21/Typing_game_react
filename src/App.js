@@ -15,13 +15,13 @@ const App = () => {
   const [characterCount, setCharacterCount] = useState(0);
   const [mistakes, setMistakes] = useState(0);
   const [solVal, setSolVal] = useState('');
-  const transferToTextFollowed = (solValue) => {
-    setSolVal(solValue);
+  const transferToTextFollowed = (value) => {
+    setSolVal(value);
     let mistakesCount = 0;
-    text.split('').forEach((data, index) => {
-      if (solValue[index] === undefined)
+    text.split('').forEach((data, index) => { 
+      if (value[index] === undefined)
         ;
-      else if (data === solValue[index])
+      else if (data === value[index])
         ;
       else {
         mistakesCount++;
